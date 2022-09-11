@@ -1,0 +1,27 @@
+@server = http://127.0.0.1:4000
+
+### Provinsi
+GET {{server}}/api/v1/daerah/provinsi
+?id_prov=
+&nama=
+x-apikey: Bearer 5cc4f79decf70968b4d73bfcc0f50259
+
+### Kabupaten
+GET {{server}}/api/v1/daerah/kabupaten
+?id_kab=
+&id_prov=
+&nama=
+&id_jenis=
+
+### Kecamatan
+GET {{server}}/api/v1/daerah/kecamatan
+?id_kec=
+&id_kab=
+&nama=
+
+### Kelurahan
+GET {{server}}/api/v1/daerah/kelurahan
+?id_kel=
+&id_kec=
+&nama=
+&id_jenis=
